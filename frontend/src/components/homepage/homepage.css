@@ -1,0 +1,186 @@
+:root {
+  --main-bg-color: #009d63;
+  --main-text-color: #009d63;
+  --second-text-color: #bbbec5;
+  --second-bg-color: #c1efde;
+}
+
+.primary-text {
+  color: var(--main-text-color);
+}
+
+.second-text {
+  color: var(--second-text-color);
+}
+
+.primary-bg {
+  background-color: var(--main-bg-color);
+}
+
+.secondary-bg {
+  background-color: var(--second-bg-color);
+}
+
+.rounded-full {
+  border-radius: 100%;
+}
+
+#wrapper {
+  overflow-x: hidden;
+  background-image: linear-gradient(
+    to right,
+    #baf3d7,
+    #c2f5de,
+    #cbf7e4,
+    #d4f8ea,
+    #ddfaef
+  );
+}
+
+#sidebar-wrapper {
+  height: 100%;
+  margin-left: -15rem;
+  -webkit-transition: margin 0.25s ease-out;
+  -moz-transition: margin 0.25s ease-out;
+  -o-transition: margin 0.25s ease-out;
+  transition: margin 0.25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+#menu-toggle {
+  cursor: pointer;
+}
+
+.list-group-item {
+  border: none;
+  padding: 20px 30px;
+}
+
+.list-group-item.active {
+  background-color: transparent;
+  color: var(--main-text-color);
+  font-weight: bold;
+  border: none;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+    width: 18%;
+  }
+
+  #page-content-wrapper {
+    margin: 0;
+    width: 82% !important;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+  .dashboard-header-fixed {
+    top: 0;
+    width: 100%;
+  }
+  .table-holder {
+    height: 74vh;
+    overflow-y: scroll;
+  }
+  .table-holder::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  /* Track */
+  .table-holder::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  .table-holder::-webkit-scrollbar-thumb {
+    background: rgb(173, 172, 172);
+    border-radius: 10px;
+  }
+
+  /* Handle on hover */
+  .table-holder::-webkit-scrollbar-thumb:hover {
+    background: rgb(236, 226, 226);
+  }
+
+  .dashboard-table {
+    width: 99% !important;
+  }
+  .dashBoard-holder {
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+
+.curser {
+  cursor: pointer;
+}
+
+.tablebook {
+  width: 100% !important;
+}
+
+.hover:hover {
+  color: white;
+}
+
+/* 
+@media screen and (min-width: 600px) {
+  //For Tablets
+      .container {
+          width: 100;
+      }
+  }
+  
+  @media screen and (min-width: 768px) {
+  //For Laptops
+      .container {
+          width: 738px;
+      }
+  }
+  
+  @media screen and (min-width: 992px) {
+  //For Large Laptops
+      .container {
+          width: 962px;
+      }
+  }
+  
+  @media screen and (min-width: 1280px) {
+  //For Big TV's (HD Screens) 
+      .container {
+          width: 1250px;
+      }
+  }
+  
+  
+  @media screen and (min-width: 1920px) {
+  //For Projectors or Higher Resolution Screens (Full HD)
+      .container {
+          width: 1890px;
+      }
+  }
+  @media screen and (min-width: 3840px) {
+  //For 4K Displays (Ultra HD)
+      .container {
+          width: 3810px;
+      }
+  } */
+
+.hover-effect:hover {
+  color: aqua;
+}
